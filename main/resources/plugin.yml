@@ -1,0 +1,40 @@
+name: GoldenPosition
+version: '${project.version}'
+main: org.goldenpositioning.classes.MAIN
+api-version: 1.16
+prefix: GoldenPosition
+authors: [ SpyMode ]
+description: set and get the Positions from a certain Location
+website: https://mc-host24.de/donate/Flamingsky
+commands:
+  helpposition:
+    description: get all position commands
+  position:
+    description: get your current position
+  postion list:
+    description: list of all position names
+    usage: /<command>
+  position public:
+    description: list of all public position names
+    usage: /<command>
+  position private:
+    description: list of all private position names
+    usage: /<command>
+  position pin:
+    description: make your position public
+    usage: /<command> <positionname>
+  position player:
+    description: get the position of a player
+    usage: /<command> <player>
+  position send:
+    description: send your position to someone
+    usage: /<command> [all|player]
+  position save:
+    description: save your position for a certain duration
+    usage: /<command> [temp|semi|perm] [positionname]
+  position public get:
+    description: get the public position of given name
+    usage: /<command> <positionname>
+  position private get:
+    description: get the private position of given name
+    usage: /<command> [temp|semi|perm] <positionname>
